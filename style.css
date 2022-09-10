@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:  hsl(0, 0%, 95%);
+    display: block;
+    align-items: center;
+    min-height: 70vh;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400; 
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 8px;
+    margin: 2rem;
+    overflow: hidden;
+} 
+
+#Sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+#SUVs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#Luxury{
+    background-color: hsl(179, 100%, 13%); 
+}
+
+.content{
+    padding: 40px;
+}
+
+.content h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 35px;
+} 
+
+.content p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+} 
+
+.content a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%); 
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+a.Sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+a.SUVs{
+    color: hsl(184, 100%, 22%);
+}
+
+a.Luxury{
+    color: hsl(179, 100%, 13%); 
+}
+
+.content a:hover{
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+.attribution{
+    margin-top: 150px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
+
+.Name{
+    font-style: italic ;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin: 0px 0px -140px 0px;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;
+   } 
+   .attribution{
+        margin-bottom: 20px;
+   } 
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper{
+         margin: 2rem .5rem;
+    } 
+ } 
+
+ 
